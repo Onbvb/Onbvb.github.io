@@ -3,7 +3,7 @@
 <body>
 <form>
 <h1>Enter Code?</h1>
-<input type="password" id="codeInput">
+<input type="text" id="codeInput">
 <input type="button" id="enterCode" value="Submit">
 </form>
 <script type="text/javascript">
@@ -16,6 +16,10 @@
     {
         if (code.value == "SIXSTATES") {
             var URL = "https://onbvb.github.io/quantum.html";
+            var win = window.open(URL, "_blank");
+        }
+        else {
+            var URL = "https://onbvb.github.io/404.html";
             var win = window.open(URL, "_blank");
         };
     }
