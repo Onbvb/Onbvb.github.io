@@ -1,7 +1,24 @@
 <!DOCTYPE html>
 <html>
 <body>
-<label for="codeInput">Enter Code?</label>
-<input type="text" id="codeInput" name="codeInput">
+<form>
+<h1>Enter Code?</h1>
+<input type="password" id="codeInput">
+<input type="button" id="enterCode" value="Submit">
+</form>
+<script type="text/javascript">
+    const submitButton = document.querySelector('$enterCode');
+    const code = document.querySelector('$codeInput');
+
+    submitButton.addEventListener('click', checkCode);
+    
+    function checkCode()
+    {
+        if (code.value == "SIXSTATES") {
+            var URL = "https://onbvb.github.io/quantum.html";
+            var win = window.open(URL, "_blank");
+        };
+    }
+</script>
 </body>
 </html>
