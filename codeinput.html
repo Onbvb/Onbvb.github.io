@@ -15,8 +15,8 @@
     function checkCode()
     {
         let code = document.querySelector('input#codeInput');
-        console.log("Code is: " + code);
-        let targetPage = codeData[code];
+        console.log("Code is: " + code.value);
+        let targetPage = codeData[code.value];
         console.log("Target Page is: " + targetPage);
         var URL = "https://onbvb.github.io/" + targetPage;
         console.log("URL is: " + URL);
