@@ -9,13 +9,13 @@
 <script type="module">
     import codeData from './codes.json' with {type: "json"};
     const submitButton = document.querySelector('input#enterCode');
-    const code = document.querySelector('input#codeInput');
-    console.log("Code is: " + code);
 
     submitButton.addEventListener('click', checkCode);
     
     function checkCode()
     {
+        let code = document.querySelector('input#codeInput');
+        console.log("Code is: " + code);
         let targetPage = codeData[code];
         console.log("Target Page is: " + targetPage);
         var URL = "https://onbvb.github.io/" + targetPage;
