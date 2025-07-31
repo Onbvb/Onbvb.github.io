@@ -7,7 +7,7 @@
 <input type="button" id="enterCode" value="Submit">
 </form>
 <script type="module">
-    import codeData from './codes.json';
+    import codeData from './codes.json' with {type: "json"};
     const submitButton = document.querySelector('input#enterCode');
     const code = document.querySelector('input#codeInput');
 
