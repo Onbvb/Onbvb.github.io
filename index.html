@@ -3,5 +3,14 @@
     <body>
         <h1>Hello, World!</h1>
         <p>This is me doing <b>github pages!</b></p>
+        <input type="button" id="goShiplog" value="Go to ship log debugger.">
     </body>
+    <script type="module">
+    const shipButton = document.querySelector('input#goShiplog');
+    shipButton.addEventListener('click', goShipLog);
+    function goShipLog() {
+        var URL = "https://onbvb.github.io/shiplog/codeinput.html";
+        var win = window.location.assign(URL);
+    }
+    </script>
 </html>
