@@ -2,11 +2,11 @@
 <html>
     <h1>You have entered the quantum moon!</h1>
     <form>
-        <input type="checkbox" name="test" value="1"/>
-        <input type="checkbox" name="test" value="1"/>
-        <input type="checkbox" name="test" value="1"/>
-        <input type="checkbox" name="test" value="1"/>
-        <input type="checkbox" name="test" value="1"/>
+        <input type="checkbox" name="test"/>
+        <input type="checkbox" name="test"/>
+        <input type="checkbox" name="test"/>
+        <input type="checkbox" name="test"/>
+        <input type="checkbox" name="test"/>
         <input type="button" id="checkBoxes" value="Submit">
     </form>
 </html>
@@ -23,7 +23,7 @@
     // A method of checking the answer.
     // Ideas for each:
     // make the squares checkboxes for now.
-    // have said checkboxes export as an array
+    // have said checkboxes export as an array (i love that checkboxes cant have a bool value :3)
     // check that array against an array that is correct
     // uhhhhhh
     // numbers are text obv
@@ -37,7 +37,9 @@
     function checkBoxes()
     {
         for (var i = 0; 1 < boxes.length; i++){
-        arrayBoxes.push(boxes[i].value);
+        if (boxes[i] = null) {
+            arrayBoxes.push(0);
+        } else arrayBoxes.push(1);
     }
     console.log(arrayBoxes);
     };
