@@ -1,4 +1,44 @@
 <!DOCTYPE html>
 <html>
     <h1>You have entered the quantum moon!</h1>
+    <form>
+        <input type="checkbox" name="test"/>
+        <input type="checkbox" name="test"/>
+        <input type="checkbox" name="test"/>
+        <input type="checkbox" name="test"/>
+        <input type="checkbox" name="test"/>
+        <input type="button" id="checkBoxes" value="Submit">
+    </form>
 </html>
+
+<script type="module">
+    // TODO:
+    // Make a Nonogram
+    // Make an image to Nonogram converter (maybe)
+
+    // What is a Nonogram?
+    // Components:
+    // Toggleable squares (pixels)
+    // Number Hints
+    // A method of checking the answer.
+    // Ideas for each:
+    // make the squares checkboxes for now.
+    // have said checkboxes export as an array
+    // check that array against an array that is correct
+    // uhhhhhh
+    // numbers are text obv
+    var arrayBoxes = [];
+    var boxes = document.querySelectorAll('input[type=checkbox]');
+    const checkButton = document.querySelector('input#checkBoxes');
+
+    checkButton.addEventListener('click', checkBoxes);
+
+
+    function checkBoxes()
+    {
+        for (var i = 0; 1 < boxes.length; i++){
+        arrayBoxes.push(boxes[i].value);
+    }
+    console.log(arrayBoxes);
+    };
+</script>
