@@ -2,45 +2,22 @@
 <html>
     <h1>You have entered the quantum moon!</h1>
     <form>
-        <input type="checkbox" name="test"/>
-        <input type="checkbox" name="test"/>
-        <input type="checkbox" name="test"/>
-        <input type="checkbox" name="test"/>
-        <input type="checkbox" name="test"/>
-        <input type="button" id="checkBoxes" value="Submit">
+
     </form>
 </html>
 
 <script type="module">
     // TODO:
     // Make a Nonogram
-    // Make an image to Nonogram converter (maybe)
 
     // What is a Nonogram?
     // Components:
     // Toggleable squares (pixels)
+    // Note: Squares need to have behavior for both left and right clicking.
     // Number Hints
+    // Note: Need to be aligned with the grid, and have multiple numbers if needed.
     // A method of checking the answer.
-    // Ideas for each:
-    // make the squares checkboxes for now.
-    // have said checkboxes export as an array (i love that checkboxes cant have a bool value :3)
-    // check that array against an array that is correct
-    // uhhhhhh
-    // numbers are text obv
-    var arrayBoxes = [];
-    var boxes = document.querySelectorAll('input[type=checkbox]');
-    const checkButton = document.querySelector('input#checkBoxes');
 
-    checkButton.addEventListener('click', checkBoxes);
-
-
-    function checkBoxes()
-    {
-        for (var i = 0; 1 < boxes.length; i++){
-        if (boxes[i] == null) {
-            arrayBoxes.push(0);
-        } else arrayBoxes.push(1);
-    }
-    console.log(arrayBoxes);
-    };
+    // I will likely go with a hardcoded answer, as itll be less painful.
+    // Time to make a JSON object with the hints and grid!
 </script>

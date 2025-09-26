@@ -3,14 +3,22 @@
     <body>
         <h1>Hello, World!</h1>
         <p>This is me doing <b>github pages!</b></p>
+        <!--
         <input type="button" id="goShiplog" value="Go to ship log debugger.">
+        !-->
+        <input type="button" id="readMyShit" value="Read my books!">
     </body>
     <script type="module">
-    const shipButton = document.querySelector('input#goShiplog');
-    shipButton.addEventListener('click', goShipLog);
-    function goShipLog() {
-        var URL = "https://onbvb.github.io/shiplog/codeinput.html";
-        var win = window.location.assign(URL);
+    //const shipButton = document.querySelector('input#goShiplog');
+    //shipButton.addEventListener('click', goShipLog);
+    //function goShipLog() {
+    //    var URL = "https://onbvb.github.io/shiplog/codeinput.html";
+    //    var win = window.location.assign(URL);
+    //}
+    const bookButton = document.querySelector('input#readMyShit')
+    bookButton.addEventListener('click', readIt)
+    function readIt() {
+        var win = window.location.assign("https://onbvb.github.io/reading/bookIndex.html");
     }
     </script>
 </html>

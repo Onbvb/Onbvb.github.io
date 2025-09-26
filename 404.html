@@ -4,5 +4,13 @@
         <h1>Uh Oh!</h1>
         <p>You really weren't supposed to end up here, but you'll probably be fine!</p>
         <p>Code: 404!</p>
+        <input type="button" id="uhOh" value="Take me back to the homepage!">
     </body>
+    <script type="module">
+    const goBack = document.querySelector('input#seikoPMD')
+    goBack.addEventListener('click', takeMeHome)
+    function takeMeHome() {
+        var win = window.location.assign("https://onbvb.github.io/index.html");
+    }
+    </script>
 </html>
