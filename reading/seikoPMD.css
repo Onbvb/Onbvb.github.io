@@ -5,7 +5,7 @@
     --dark-bg: rgb(0, 10, 43);
 
     --light-color: rgb(0, 0, 0);
-    --dark-color: ghostwhite;
+    --dark-color: rgb(201, 201, 201);
 }
 
 * {
@@ -14,7 +14,8 @@
 }
 
 .corpus {
-    color: light-dark(purple, magenta);
+    color: light-dark(purple, rgb(216, 0, 216));
+    font-weight: bold;
 }
 
 p {
@@ -23,6 +24,7 @@ p {
 
 .luna {
     color: light-dark(#332A6C,#5F3287);
+    font-weight: bold;
 }
 
 /*
