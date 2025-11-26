@@ -1,3 +1,8 @@
+/*
+You aren't supposed to be here!
+Spoilers for characters that appear, maybe, perhaps.
+*/
+
 :root {
     color-scheme: light dark;
 
@@ -14,7 +19,7 @@
 }
 
 .corpus {
-    color: light-dark(purple, rgb(216, 0, 216));
+    color: light-dark(purple, rgb(255, 124, 255));
     font-weight: bold;
 }
 
@@ -27,6 +32,16 @@ p {
     font-weight: bold;
 }
 
-/*
-Ideas:
-add character voicing? maybe?
+.ladyluck {
+    color: light-dark(#a58812,#ebca46);
+    font-weight: bold;
+}
+
+.spoiler {
+  background-color: light-dark(var(--dark-bg), var(--light-bg));
+  color: light-dark(var(--dark-color), var(--light-color));
+}
+
+.spoiler:hover {
+    color: light-dark(var(--light-color), var(--dark-color));
+}
