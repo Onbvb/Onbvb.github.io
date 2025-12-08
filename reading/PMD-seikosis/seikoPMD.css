@@ -45,3 +45,9 @@ p {
 .spoiler:hover {
     color: light-dark(var(--light-color), var(--dark-color));
 }
+
+#nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
